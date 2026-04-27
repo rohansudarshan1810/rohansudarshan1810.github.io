@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+.vite/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Development
+.replit
+.local/
+
+# Database
+*.db
+.drizzle/
+
+# Server files (not needed for static deployment)
+server/
+script/
+shared/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
