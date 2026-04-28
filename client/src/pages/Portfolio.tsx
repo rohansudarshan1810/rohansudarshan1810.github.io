@@ -559,7 +559,7 @@ export default function Portfolio() {
               <Button
                 size="sm"
                 className="ml-4"
-                onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1naomThJXANOERRfEp04UdwsHxF3icmdu/view?usp=sharing", "_blank")}
                
               >
                 <Download className="w-4 h-4 mr-2" />
@@ -617,7 +617,7 @@ export default function Portfolio() {
               <Button
                 size="sm"
                 className="w-full mt-2"
-                onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1naomThJXANOERRfEp04UdwsHxF3icmdu/view?usp=sharing", "_blank")}
                
               >
                 <Download className="w-4 h-4 mr-2" />
@@ -709,7 +709,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mt-8">
                 <Button
                   size="lg"
-                  onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1naomThJXANOERRfEp04UdwsHxF3icmdu/view?usp=sharing", "_blank")}
                  
                 >
                   <Download className="w-4 h-4 mr-2" />
