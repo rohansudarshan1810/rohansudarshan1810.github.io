@@ -42,66 +42,76 @@ const navItems = [
 const experiences = [
   {
     id: 1,
-    title: "Senior Software Engineer",
-    company: "Fivetran",
-    location: "Bengaluru, India",
-    period: "Mar 2023 - Aug 2024",
-    description: "Redesigned data writers for BigQuery destination and optimized warehouse data pipelines. Led implementation of JSON data type support and cost optimization features.",
+    title: "AI Engineer",
+    company: "Stackgen",
+    location: "San Ramon, California",
+    period: "Jan 2026 -  Present",
+    description: "Building and scaling autonomous AI agent infrastructure powering a multi-agent SRE/DevOps platform across AWS, GCP, Kubernetes, and GitHub.",
     achievements: [
-      "Redesigned BigQuery writer to mirror SQL flow, slashing maintenance by 90% while easing feature rollout across destinations.",
-      "Introduced multithreaded warehouse writer with concurrent split-file handling, lifting ingest throughput by roughly 30%.",
-      "Delivered native JSON data type support in BigQuery to simplify migrations and improve downstream correctness.",
-      "Applied partitioning and clustering strategies that cut customers’ BigQuery storage/scan bills by about 90%.",
+      "Built and scaled 30+ autonomous AI agents using CrewAI with dynamic skill loading, custom delegation, and end-to-end MCP integration.",
+      "Shipped Knowledge Hub , a production RAG pipeline with structural and semantic chunking, pgvector embeddings, and L2 similarity search as a live runtime tool for 30+ agents.",
+      "Engineered provider-agnostic LLM infrastructure across OpenAI, Anthropic, AWS Bedrock, and Vertex AI via LiteLLM with per-tenant BYOK and AES-GCM encrypted credentials.",
+      "Hardened multi-tenant security with real-time SSE streaming, OPA-based auth, and enterprise-grade credential isolation across all LLM providers.",
     ],
-    technologies: ["BigQuery", "SQL", "Java", "Multi-threading", "Data Pipelines", "Cloud SQL"],
+    technologies: ["LangChain", "CrewAI", "LiteLLM", "RAG", "pgvector", "MCP", "OpenAI", "Anthropic", "AWS Bedrock", "Python", "FastAPI", "Kubernetes"],
   },
   {
     id: 2,
-    title: "Software Engineer 2",
-    company: "Fivetran",
-    location: "Bengaluru, India",
-    period: "Sep 2021 - Mar 2023",
-    duration: "1 year 7 months",
-    description: "Designed high-performance database connectors for DynamoDB and MongoDB. Developed new connector support for Azure CosmosDB.",
+    title: "AI Software Engineer",
+    company: "UI Health",
+    location: "Chicago, Illinois",
+    period: "Sep 2023 - Dec 2025",
+    duration: "2 year 3 months",
+    description: "Integrated LLM-powered tooling and alert infrastructure into internal developer workflows, eliminating manual incident investigation for the engineering team.",
     achievements: [
-      "Built a high-performance DynamoDB source connector achieving ~15× faster incremental reads versus the prior implementation.",
-      "Designed a MongoDB Change Streams CDC pipeline that delivers ~5× faster incremental syncs with lower latency.",
-      "Implemented an end-to-end Azure Cosmos DB (Mongo API) connector with auth, schema handling, and reliability guards.",
-      "Launched Data Preview via IES to streamline onboarding and make connector extensions repeatable across the catalog.",
+      "Integrated OpenAI-powered summarization, log analysis, and embedding-based semantic search into developer tooling — eliminating manual log parsing entirely.",
+      "Built modular alert ingestion pipelines for Datadog and PagerDuty with deduplication, severity normalization, and smart routing to accelerate on-call triage.",
     ],
-    technologies: ["DynamoDB", "MongoDB", "Azure CosmosDB", "CDC", "GraphQL", "Java"],
+    technologies: ["OpenAI", "Semantic Search", "pgvector", "Datadog", "PagerDuty", "Python", "Node.js"],
   },
   {
     id: 3,
-    title: "Software Engineer",
-    company: "Fivetran",
+    title: "Software Developer II",
+    company: "Hevo Data",
     location: "Bengaluru, India",
-    period: "Jun 2020 - Aug 2021",
-    duration: "1 year 3 months",
-    description: "Authored Isolated Endpoint Sync framework adopted across 500+ connectors. Built public Shopify app and implemented scalable Strip connector enhancements.",
+    period: "Mar 2022 - Jul 2023",
+    duration: "1 year 5 months",
+    description: "Led performance engineering on core data connectors and authored a reliability framework adopted across 10+ internal engineering teams.",
     achievements: [
-      "Authored the Isolated Endpoint Sync framework now used in 500+ connectors and 10+ teams’ workflows.",
-      "Shipped a public Shopify app with merchant auth, GraphQL data extraction, and resilient retry/backoff.",
-      "Added multithreading plus connected-account support to scale the Stripe connector under heavy merchant loads.",
-      "Built an ADP REST ETL connector with documented ERD, fault handling, and production-readiness.",
+      "Achieved 20× production throughput improvement by profiling bottlenecks with Java Flight Recorder flame graphs and implementing targeted parallelization.",
+      "Engineered high-performance DynamoDB connector delivering 15× faster incremental syncs through optimized pagination and parallel fetch strategies.",
+      "Re-architected MongoDB connector using Change Streams–based CDC, reducing ingestion latency by 5×.",
+      "Designed production-grade Oracle ETL pipeline (RAC & CDB/PDB) adopted as a premium enterprise connector, and built a Unified Connector Framework across internal teams.",
     ],
-    technologies: ["REST API", "GraphQL", "Shopify", "Multi-threading", "ETL", "Java"],
+    technologies: ["REST API", "GraphQL", "Shopify", "Multi-threading", "ETL", "Java","Kafka", "CDC", "JFR"],
   },
   {
     id: 4,
-    title: "Software Engineer Intern",
-    company: "Fivetran",
+    title: "Software Developer I",
+    company: "Hevo Data",
     location: "Bengaluru, India",
-    period: "Jan 2020 - May 2020",
-    duration: "5 months",
-    description: "Worked on API-based data pipeline connectors and implemented performance benchmarking for ETL pipelines.",
+    period: "Jun 2019 - Feb 2022",
+    duration: "2 year 8 months",
+    description: "Optimized distributed data pipelines and built production ETL connectors enabling reliable near-real-time sync for enterprise customers.",
     achievements: [
-      "Built and hardened multiple API data-pipeline connectors across finance and commerce sources.",
-      "Added Recharge webhooks for incremental syncs, boosting extract speed by roughly 10×.",
-      "Benchmarked the end-to-end Snowflake ETL pipeline to quantify latency and throughput bottlenecks.",
-      "Extended webhook handling and retries to stabilize Recharge and improve customer reliability.",
+      "Cut MongoDB-Kafka pipeline data lag from 45 minutes to under 5 minutes through ingestion tuning and distributed consumer optimization.",
+      "Built JDBC ETL connector for Oracle NetSuite Analytics enabling reliable near-real-time sync to downstream data warehouses.",
     ],
-    technologies: ["Python", "Webhooks", "Snowflake", "ETL", "API", "Java"],
+    technologies: ["Java", "MongoDB", "Kafka", "Oracle", "JDBC", "ETL", "PostgreSQL", "Distributed Systems"],
+  },
+  {
+    id: 5,
+    title: "Software Engineer Intern",
+    company: "Hevo Data",
+    location: "Bengaluru, India",
+    period: "Jan 2019 - May 2019",
+    duration: "5 months",
+    description: "Built observability infrastructure and high-performance sync capabilities during internship, with work shipped directly to production.",
+    achievements: [
+      "Built a Continuous Monitoring Platform for data pipelines using PostgreSQL, Grafana, and Docker — enabling real-time observability across pipeline health.",
+      "Implemented webhook-based incremental sync for the Recharge connector, improving data extraction performance by 10×.",
+    ],
+    technologies: ["PostgreSQL", "Grafana", "Docker", "Webhooks", "Python"],
   },
 ];
 
@@ -109,126 +119,162 @@ const experiences = [
 const projects = [
   {
     id: 1,
-    title: "High-Performance DynamoDB Connector",
-    description: "Designed and developed a high-performance DynamoDB source connector achieving 15x faster incremental data retrieval compared to previous versions.",
-    technologies: ["DynamoDB", "Java", "AWS", "Data Pipelines"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/1_dynamoDB.png",
+    title: "GUILD - Distributed Multi-Tenant Agentic Platform",
+    description: "Open-source enterprise platform orchestrating LLM agents across Slack, Teams, and Web via a durable Gateway → NATS → Temporal → Agent Worker pipeline with multi-model LLM routing and native MCP integration.",
+    technologies: ["Go", "PostgreSQL", "Kubernetes", "Docker", "NATS JetStream", "Temporal", "OpenTelemetry", "Langfuse", "MCP", "OpenAI", "Anthropic", "Gemini"],
+    link: "https://github.com/rohansudarshan1810",
+    image: "/images/guild2.png",
     flagship: true,
   },
   {
     id: 2,
-    title: "MongoDB CDC Incremental Sync",
-    description: "Developed MongoDB Change Streams-based CDC incremental syncing, delivering 5x performance improvement for real-time data extraction.",
-    technologies: ["MongoDB", "Change Streams", "CDC", "Java"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/2_MongoDB.png",
+    title: "Fintech Business Analytics Platform",
+    description: "Production-grade Node.js/Express backend unifying bank transactions (Plaid) and POS sales data (Square) into a single financial API platform with AI-powered insights, real-time WebSocket updates, and cursor-based sync pipelines.",
+    technologies: ["Node.js", "Express", "PostgreSQL", "Prisma", "Redis", "WebSockets", "Plaid", "Square", "Firebase", "OpenAI", "AWS S3", "Docker", "GitHub Actions", "Sentry"],
+    link: "https://github.com/rohansudarshan1810",
+    image: "/images/onebit.png",
+    flagship: true,
   },
   {
     id: 3,
-    title: "Mini Database Management System Internals Implementation",
-    description: "Built the core internals of a relational database management system from scratch, including a page-based Storage Manager, in-memory Buffer Manager with FIFO and LRU replacement strategies, Record Manager with slotted-page storage, and B+ Tree Index Manager for efficient key-based lookup.",
-    technologies: ["C", "Database Systems", "Storage Management", "Indexing", "B+ Trees"],
-    link: "https://github.com/SunilKuruba/Mini-Database-Management-System-Internals-Implementation",
-    image: "/images/1_db_internals.png",
+    title: "GitHub Repository Summariser",
+    description: "AI-powered tool that ingests any public GitHub repository and generates structured, context-aware summaries using LLMs — covering architecture, key modules, dependencies, and contributor patterns.",
+    technologies: ["Python", "OpenAI", "GitHub API", "RAG", "FastAPI", "Docker"],
+    link: "https://github.com/rohansudarshan1810",
+    image: "/images/github-repo.png",
   },
   {
     id: 4,
-    title: "BigQuery Data Writer Redesign",
-    description: "Redesigned and developed a new data writer for the BigQuery destination, aligning with SQL-based data writers, eliminating maintenance overhead by 90%, and streamlining the implementation of new features. Optimized using data partitioning and clustering, reducing customer BigQuery bills by 90%.",
-    technologies: ["BigQuery", "SQL", "Java", "Data Warehouse", "Cloud Optimization"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/bigquery.png",
-  },
-  {
-    id: 5,
-    title: "Snowflake Multi-Threaded Data Writer Pipeline",
-    description: "Enhanced the efficiency of the Warehouse Data Writer pipeline by 30% through the implementation of multi-threading with multiple workers, enabling concurrent file append and processing of split files. Improved data ingestion performance and reduced pipeline latency.",
-    technologies: ["Snowflake", "Java", "Multi-threading", "Data Pipelines", "ETL"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/snowflake.png",
-  },
-  {
-    id: 6,
-    title: "Multi-Source API Connectors for Data Integration",
-    description: "Implemented API connectors for 20+ data sources including finance and e-commerce platforms. Built robust data ingestion and processing pipelines with comprehensive error handling, rate limiting, and maintenance protocols. Enabled seamless data integration across diverse business domains.",
-    technologies: ["REST APIs", "GraphQL", "Data Integration", "ETL", "Java", "Error Handling"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/api_connector.png",
-  },
-  {
-    id: 7,
-    title: "Isolated Endpoint Sync Framework",
-    description: "Authored reliability framework adopted across 10+ engineering teams and 500+ connectors, improving consistency and fault tolerance across the data pipeline platform.",
-    technologies: ["Java", "Multi-threading", "ETL", "Distributed Systems"],
-    link: "https://github.com/SunilKuruba",
-    image: "/images/3_isolated.png",
-  },
-  {
-    id: 8,
-    title: "AWS vs GCP Data Pipeline: Comparative Analysis",
-    description: "Designed and benchmarked parallel real-time data streaming pipelines on AWS and GCP to evaluate performance, cost efficiency, and environmental sustainability. Built mirror-image architectures using Kinesis/Lambda/DynamoDB and managed Kafka/Beam/Bigtable respectively.",
-    technologies: ["AWS", "GCP", "Kinesis", "Apache Beam", "Terraform", "DynamoDB", "Bigtable"],
-    link: "https://github.com/SunilKuruba/AWS-VS-GCP-Data-Pipeline-Comparative-Analysis-of-Real-Time-Data-Streaming",
-    image: "/images/2_data_pipeline_benchmark.png",
-  },
-  {
-    id: 9,
-    title: "Visual Analytics for LinkedIn Job Postings",
-    description: "Built an end-to-end visual analytics system to explore large-scale job market data. Features include interactive Altair and Vega-Lite dashboards, embedding-based job similarity exploration using PCA and t-SNE for cluster discovery and trend analysis.",
-    technologies: ["Data Visualization", "Altair", "Vega-Lite", "Python", "Analytics", "Interactive Dashboards"],
-    link: "https://github.com/SunilKuruba/Visual-Analytics-and-Interactive-Dashboards-for-LinkedIn-Postings",
-    image: "/images/7_visual_analytics.png",
-  },
-  {
-    id: 10,
-    title: "Distributed LLM Text Processing with Hadoop and AWS EMR",
-    description: "Leveraged Apache Hadoop and AWS EMR to build a distributed system for preprocessing large-scale text data and generating token embeddings for LLM applications using custom tokenizers and MapReduce.",
-    technologies: ["Hadoop", "AWS EMR", "MapReduce", "Scala", "Text Processing", "NLP"],
-    link: "https://github.com/SunilKuruba/Apache-Hadoop-and-AWS-EMR-Distributed-LLM-Text-Processing-and-Embeddings",
-    image: "/images/3_hadoop.png",
-  },
-  {
-    id: 11,
-    title: "Distributed Neural Network Training with Spark and AWS EMR",
-    description: "Used Apache Spark on AWS EMR to train and evaluate neural networks for natural language generation. Implemented multi-layer feedforward neural networks for distributed text processing and sentence generation.",
-    technologies: ["Apache Spark", "AWS EMR", "DL4J", "MLlib", "Neural Networks", "NLP"],
-    link: "https://github.com/SunilKuruba/Apache-Spark-and-AWS-EMR-Distributed-Neural-Network-Training-and-Sentence-Generation",
-    image: "/images/4_spark.png",
-  },
-  {
-    id: 12,
     title: "LLM Conversation API with AWS Bedrock and Ollama",
     description: "Implemented a hybrid conversational API integrating AWS Bedrock and Ollama for both cloud-based and local LLM inference. Built with Scala, Akka HTTP, gRPC, and deployed via Docker on AWS EC2 for production-grade LLM orchestration.",
     technologies: ["AWS Bedrock", "Ollama", "Scala", "Akka HTTP", "gRPC", "Docker", "AWS Lambda"],
-    link: "https://github.com/SunilKuruba/AWS-Bedrock-Based-LLM-Conversation-API-with-Ollama-Integration-with-Dockerized-Deployment",
+    link: "https://github.com/rohansudarshan1810",
     image: "/images/8_aws_llm.png",
   },
-  {
-    id: 13,
-    title: "Help Session Activity Management System",
-    description: "Developed a full-stack application to streamline the scheduling and management of help sessions for students and instructors. Features include session creation, attendance tracking, feedback logging, and role-based access with analytics dashboards.",
-    technologies: ["Database Design", "API Development", "Full-Stack", "User Experience", "Analytics"],
-    link: "https://github.com/SunilKuruba/Data-Modeling-Help-Session-Activity-Management-System",
-    image: "/images/5_data_modeling.png",
-  },
-  {
-    id: 14,
-    title: "Social-Aware Movie Revenue Prediction using Sentiment",
-    description: "Predicted box office revenue by combining traditional movie metadata with real-time social sentiment and emotion signals from Reddit and YouTube using RoBERTa and DistilRoBERTa. Achieved 10-15% accuracy improvement with XGBoost, CatBoost, and LightGBM.",
-    technologies: ["Machine Learning", "NLP", "RoBERTa", "XGBoost", "Feature Engineering", "Data Science"],
-    link: "https://github.com/SunilKuruba/Data-Science-Project-Social-Aware-Movie-Revenue-Prediction-Using-Metadata-and-Sentiment-Signals",
-    image: "/images/6_data_science.png",
-  },
-  {
-    id: 15,
-    title: "Fairness-Aware Job Recommendation System",
-    description: "Implemented a fairness-aware job recommendation system combining semantic embeddings of resumes and job descriptions with collaborative filtering. Focused on exposure fairness using metrics like Selection Rate and Proportional Fairness Error.",
-    technologies: ["Recommendation Systems", "Embeddings", "Fairness in ML", "Collaborative Filtering", "NLP"],
-    link: "https://github.com/Vishnu1721/Fair-and-Explainable-Job-Recommendation-System",
-    image: "/images/9_fainess_job.jpeg",
-  },
 ];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "High-Performance DynamoDB Connector",
+//     description: "Designed and developed a high-performance DynamoDB source connector achieving 15x faster incremental data retrieval compared to previous versions.",
+//     technologies: ["DynamoDB", "Java", "AWS", "Data Pipelines"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/1_dynamoDB.png",
+//     flagship: true,
+//   },
+//   {
+//     id: 2,
+//     title: "MongoDB CDC Incremental Sync",
+//     description: "Developed MongoDB Change Streams-based CDC incremental syncing, delivering 5x performance improvement for real-time data extraction.",
+//     technologies: ["MongoDB", "Change Streams", "CDC", "Java"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/2_MongoDB.png",
+//   },
+//   {
+//     id: 3,
+//     title: "Mini Database Management System Internals Implementation",
+//     description: "Built the core internals of a relational database management system from scratch, including a page-based Storage Manager, in-memory Buffer Manager with FIFO and LRU replacement strategies, Record Manager with slotted-page storage, and B+ Tree Index Manager for efficient key-based lookup.",
+//     technologies: ["C", "Database Systems", "Storage Management", "Indexing", "B+ Trees"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/1_db_internals.png",
+//   },
+//   {
+//     id: 4,
+//     title: "BigQuery Data Writer Redesign",
+//     description: "Redesigned and developed a new data writer for the BigQuery destination, aligning with SQL-based data writers, eliminating maintenance overhead by 90%, and streamlining the implementation of new features. Optimized using data partitioning and clustering, reducing customer BigQuery bills by 90%.",
+//     technologies: ["BigQuery", "SQL", "Java", "Data Warehouse", "Cloud Optimization"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/bigquery.png",
+//   },
+//   {
+//     id: 5,
+//     title: "Snowflake Multi-Threaded Data Writer Pipeline",
+//     description: "Enhanced the efficiency of the Warehouse Data Writer pipeline by 30% through the implementation of multi-threading with multiple workers, enabling concurrent file append and processing of split files. Improved data ingestion performance and reduced pipeline latency.",
+//     technologies: ["Snowflake", "Java", "Multi-threading", "Data Pipelines", "ETL"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/snowflake.png",
+//   },
+//   {
+//     id: 6,
+//     title: "Multi-Source API Connectors for Data Integration",
+//     description: "Implemented API connectors for 20+ data sources including finance and e-commerce platforms. Built robust data ingestion and processing pipelines with comprehensive error handling, rate limiting, and maintenance protocols. Enabled seamless data integration across diverse business domains.",
+//     technologies: ["REST APIs", "GraphQL", "Data Integration", "ETL", "Java", "Error Handling"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/api_connector.png",
+//   },
+//   {
+//     id: 7,
+//     title: "Isolated Endpoint Sync Framework",
+//     description: "Authored reliability framework adopted across 10+ engineering teams and 500+ connectors, improving consistency and fault tolerance across the data pipeline platform.",
+//     technologies: ["Java", "Multi-threading", "ETL", "Distributed Systems"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/3_isolated.png",
+//   },
+//   {
+//     id: 8,
+//     title: "AWS vs GCP Data Pipeline: Comparative Analysis",
+//     description: "Designed and benchmarked parallel real-time data streaming pipelines on AWS and GCP to evaluate performance, cost efficiency, and environmental sustainability. Built mirror-image architectures using Kinesis/Lambda/DynamoDB and managed Kafka/Beam/Bigtable respectively.",
+//     technologies: ["AWS", "GCP", "Kinesis", "Apache Beam", "Terraform", "DynamoDB", "Bigtable"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/2_data_pipeline_benchmark.png",
+//   },
+//   {
+//     id: 9,
+//     title: "Visual Analytics for LinkedIn Job Postings",
+//     description: "Built an end-to-end visual analytics system to explore large-scale job market data. Features include interactive Altair and Vega-Lite dashboards, embedding-based job similarity exploration using PCA and t-SNE for cluster discovery and trend analysis.",
+//     technologies: ["Data Visualization", "Altair", "Vega-Lite", "Python", "Analytics", "Interactive Dashboards"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/7_visual_analytics.png",
+//   },
+//   {
+//     id: 10,
+//     title: "Distributed LLM Text Processing with Hadoop and AWS EMR",
+//     description: "Leveraged Apache Hadoop and AWS EMR to build a distributed system for preprocessing large-scale text data and generating token embeddings for LLM applications using custom tokenizers and MapReduce.",
+//     technologies: ["Hadoop", "AWS EMR", "MapReduce", "Scala", "Text Processing", "NLP"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/3_hadoop.png",
+//   },
+//   {
+//     id: 11,
+//     title: "Distributed Neural Network Training with Spark and AWS EMR",
+//     description: "Used Apache Spark on AWS EMR to train and evaluate neural networks for natural language generation. Implemented multi-layer feedforward neural networks for distributed text processing and sentence generation.",
+//     technologies: ["Apache Spark", "AWS EMR", "DL4J", "MLlib", "Neural Networks", "NLP"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/4_spark.png",
+//   },
+//   {
+//     id: 12,
+//     title: "LLM Conversation API with AWS Bedrock and Ollama",
+//     description: "Implemented a hybrid conversational API integrating AWS Bedrock and Ollama for both cloud-based and local LLM inference. Built with Scala, Akka HTTP, gRPC, and deployed via Docker on AWS EC2 for production-grade LLM orchestration.",
+//     technologies: ["AWS Bedrock", "Ollama", "Scala", "Akka HTTP", "gRPC", "Docker", "AWS Lambda"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/8_aws_llm.png",
+//   },
+//   {
+//     id: 13,
+//     title: "Help Session Activity Management System",
+//     description: "Developed a full-stack application to streamline the scheduling and management of help sessions for students and instructors. Features include session creation, attendance tracking, feedback logging, and role-based access with analytics dashboards.",
+//     technologies: ["Database Design", "API Development", "Full-Stack", "User Experience", "Analytics"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/5_data_modeling.png",
+//   },
+//   {
+//     id: 14,
+//     title: "Social-Aware Movie Revenue Prediction using Sentiment",
+//     description: "Predicted box office revenue by combining traditional movie metadata with real-time social sentiment and emotion signals from Reddit and YouTube using RoBERTa and DistilRoBERTa. Achieved 10-15% accuracy improvement with XGBoost, CatBoost, and LightGBM.",
+//     technologies: ["Machine Learning", "NLP", "RoBERTa", "XGBoost", "Feature Engineering", "Data Science"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/6_data_science.png",
+//   },
+//   {
+//     id: 15,
+//     title: "Fairness-Aware Job Recommendation System",
+//     description: "Implemented a fairness-aware job recommendation system combining semantic embeddings of resumes and job descriptions with collaborative filtering. Focused on exposure fairness using metrics like Selection Rate and Proportional Fairness Error.",
+//     technologies: ["Recommendation Systems", "Embeddings", "Fairness in ML", "Collaborative Filtering", "NLP"],
+//     link: "https://github.com/rohansudarshan1810",
+//     image: "/images/9_fainess_job.jpeg",
+//   },
+// ];
 
 // Education history
 const education = [
@@ -236,34 +282,34 @@ const education = [
     id: 1,
     degree: "Master of Science in Computer Science",
     school: "University of Illinois Chicago",
-    period: "Aug 2024 - Dec 2025",
-    focus: "Specialization in Data Engineering, Cloud Computing, Distributed Systems, and Big Data Technologies",
+    period: "Aug 2023 - May 2025",
+    focus: "Specialization in Distributed Systems, Cloud Computing, Software Development, and AI/ML Infrastructure",
   },
   {
     id: 2,
     degree: "Bachelor of Engineering in Computer Science",
-    school: "R. V. College of Engineering, Bangalore",
-    period: "Aug 2016 - Aug 2020",
+    school: "Visvesvaraya Technological University",
+    period: "Aug 2019 - Aug 2023",
     focus: "Computer Science and Engineering",
   },
 ];
 
-// Professional certifications
-const certifications = [
-  {
-    name: "AWS Certified Data Engineer – Associate",
-    date: "Jul 2025",
-    description: "Verified on Credly. Demonstrating hands-on expertise in designing, building, and operating scalable, secure, and cost-efficient data pipelines on AWS. This certification validates a deep understanding of how data volume, variety, and velocity influence ingestion architectures, storage strategies, and analytical workloads across modern data platforms.\n\nI am proficient in implementing end-to-end data solutions using a broad range of AWS services, including Amazon S3, Kinesis Data Streams, Kinesis Firehose, AWS Glue, Amazon EMR, Amazon Athena, Amazon Redshift, AWS Lambda, Amazon ECS, AWS Step Functions, Amazon EventBridge, Amazon RDS, DynamoDB, Amazon EC2, and Amazon EBS. The certification also reflects strong experience with security and governance using IAM, KMS, VPC, and CloudTrail, as well as monitoring, troubleshooting, and cost optimization through CloudWatch, AWS Config, and billing best practices, enabling reliable, production-grade data systems at scale.",
-    link: "https://www.credly.com/badges/775a6e7e-2f28-4cb8-ac1c-02949a7a0587/linked_in?t=szfxty",
-    image: "/images/AWS_certificate.png"
-  }
-];
+// // Professional certifications
+// const certifications = [
+//   {
+//     name: "AWS Certified Data Engineer – Associate",
+//     date: "Jul 2025",
+//     description: "Verified on Credly. Demonstrating hands-on expertise in designing, building, and operating scalable, secure, and cost-efficient data pipelines on AWS. This certification validates a deep understanding of how data volume, variety, and velocity influence ingestion architectures, storage strategies, and analytical workloads across modern data platforms.\n\nI am proficient in implementing end-to-end data solutions using a broad range of AWS services, including Amazon S3, Kinesis Data Streams, Kinesis Firehose, AWS Glue, Amazon EMR, Amazon Athena, Amazon Redshift, AWS Lambda, Amazon ECS, AWS Step Functions, Amazon EventBridge, Amazon RDS, DynamoDB, Amazon EC2, and Amazon EBS. The certification also reflects strong experience with security and governance using IAM, KMS, VPC, and CloudTrail, as well as monitoring, troubleshooting, and cost optimization through CloudWatch, AWS Config, and billing best practices, enabling reliable, production-grade data systems at scale.",
+//     link: "https://www.credly.com/badges/775a6e7e-2f28-4cb8-ac1c-02949a7a0587/linked_in?t=szfxty",
+//     image: "/images/AWS_certificate.png"
+//   }
+// ];
 
 // Key statistics
 const stats = [
   { number: "5", label: "years of experience", color: "text-blue-600" },
-  { number: "50+", label: "projects completed", color: "text-blue-600" },
-  { number: "AWS", label: "Certified Data Engineer", color: "text-blue-600" },
+  { number: "40+", label: "projects completed", color: "text-blue-600" },
+  { number: "AWS", label: "Certified Engineer", color: "text-blue-600" },
 ];
 
 const StatsAnimationContext = createContext<{ animateReady: boolean }>({ animateReady: false });
@@ -315,9 +361,30 @@ function StatCard({ stat }: { stat: { number: string; label: string; color: stri
 
 // Technical skills by category
 const skills = [
-  { category: "Programming Languages", items: ["Java", "SQL", "Python", "Scala", "C++", "Go", "Bash/Shell scripting"] },
-  { category: "Cloud & Technologies", items: ["AWS", "GCP", "Azure", "Git", "GitHub", "CI/CD", "Docker", "Kubernetes", "Terraform", "Tableau", "dbt"] },
-  { category: "Data Engineering", items: ["Data ETL/ELT pipelines", "Data modeling", "Data integration", "Data ingestion", "Data Lakes", "Data Warehouse", "Big Data Processing", "Data Governance", "Data Catalog", "Real-time Analytics", "Data validation", "Database Migrations"] },
+  {
+    category: "Programming Languages",
+    items: ["Python", "Java", "Go", "JavaScript", "TypeScript", "Scala", "SQL"],
+  },
+  {
+    category: "AI & GenAI",
+    items: ["CrewAI", "LiteLLM", "RAG Pipelines", "pgvector", "MCP", "OpenAI", "Anthropic", "AWS Bedrock", "Vertex AI", "Langfuse", "Semantic Search"],
+  },
+  {
+    category: "Backend & Data",
+    items: ["FastAPI", "Node.js", "Express", "REST", "gRPC", "WebSockets", "PostgreSQL", "MongoDB", "Redis", "Kafka", "NATS JetStream", "Temporal", "Prisma"],
+  },
+  {
+    category: "Cloud & DevOps",
+    items: ["AWS", "GCP", "Kubernetes", "Docker", "Terraform", "Helm", "GitHub Actions", "OpenTelemetry", "Sentry"],
+  },
+  {
+    category: "Security & Auth",
+    items: ["AES-GCM", "BYOK", "JWT", "OAuth 2.0", "OPA", "Multi-Tenant Auth"],
+  },
+  {
+    category: "Frontend",
+    items: ["React", "TypeScript"],
+  },
   { category: "Distributed Systems & Tools", items: ["Apache Spark", "Apache Hadoop", "Apache Flink", "Apache Kafka", "Apache Hive", "Redis", "ElasticSearch", "Apache Airflow", "gRPC", "Apache MapReduce"] },
 ];
 
@@ -387,6 +454,7 @@ export default function Portfolio() {
       { id: "san_francisco", name: "San Francisco", lat: 37.7749, lon: -122.4194 },
       { id: "chicago", name: "Chicago", lat: 41.8781, lon: -87.6298 },
       { id: "new_york", name: "New York", lat: 40.7128, lon: -74.006 },
+      { id: "bengaluru", name: "Bengaluru", lat: 12.9716, lon: 77.5946 }
     ],
     []
   );
@@ -461,7 +529,7 @@ export default function Portfolio() {
               href="#"
               className="flex items-center gap-2 font-semibold text-lg"
              >
-              <span>Sunil Kuruba Portfolio</span>
+              <span>Rohan Karle Sudarshan Portfolio</span>
             </a>
 
             {/* Desktop Navigation */}
@@ -490,7 +558,7 @@ export default function Portfolio() {
               <Button
                 size="sm"
                 className="ml-4"
-                onClick={() => window.open("https://drive.google.com/file/d/1PRGbhxBypX2w2Xn4TL6vVyABmkS7fudx/view?usp=drive_link", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
                
               >
                 <Download className="w-4 h-4 mr-2" />
@@ -548,7 +616,7 @@ export default function Portfolio() {
               <Button
                 size="sm"
                 className="w-full mt-2"
-                onClick={() => window.open("https://drive.google.com/file/d/1PRGbhxBypX2w2Xn4TL6vVyABmkS7fudx/view?usp=drive_link", "_blank")}
+                onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
                
               >
                 <Download className="w-4 h-4 mr-2" />
@@ -568,15 +636,15 @@ export default function Portfolio() {
               <div className="relative mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl scale-110" />
                 <Avatar className="w-48 h-48 border-4 border-background shadow-xl relative">
-                  <AvatarImage src="/images/profile3.jpg" alt="Profile" />
+                  <AvatarImage src="/images/profile3.png" alt="Profile" />
                   <AvatarFallback className="text-4xl font-bold bg-gradient-to-br from-primary to-accent text-white">
-                    SK
+                    RKS
                   </AvatarFallback>
                 </Avatar>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground mb-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">San Francisco, California</span>
+                <span className="text-sm">Chicago, Illinois(Open for relocation)</span>
               </div>
               <div className="flex items-center gap-3 mt-4">
                 <Button
@@ -586,7 +654,7 @@ export default function Portfolio() {
                   asChild
                 >
                   <a
-                    href="https://www.linkedin.com/in/sunil-kuruba"
+                    href="https://www.linkedin.com/in/rohankarlesudarshan/"
                     target="_blank"
                     rel="noopener noreferrer"
                    >
@@ -600,7 +668,7 @@ export default function Portfolio() {
                   asChild
                 >
                   <a
-                    href="https://github.com/SunilKuruba"
+                    href="https://github.com/rohansudarshan1810"
                     target="_blank"
                     rel="noopener noreferrer"
                    >
@@ -632,15 +700,15 @@ export default function Portfolio() {
               `}</style>
               <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent typewriter">
                 Hi, I'm{" "}
-                <span className="text-primary">Sunil Kuruba</span>
+                <span className="text-primary">Rohan Karle Sudarshan</span>
               </h1>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 max-w-2xl">
-                Senior Backend & Data Infrastructure Engineer with deep experience building high-throughput data pipelines and large-scale distributed systems. Specialized in cloud-native analytics platforms, real-time streaming, and reliability-focused backend services.
+              AI Engineer & Software Developer specializing in building production grade LLM systems, multi-agent architectures, and scalable distributed backend platforms. Experienced in cloud native infrastructure, RAG pipelines, and high performance systems delivering real world impact at scale.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mt-8">
                 <Button
                   size="lg"
-                  onClick={() => window.open("https://drive.google.com/file/d/1PRGbhxBypX2w2Xn4TL6vVyABmkS7fudx/view?usp=drive_link", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1iFdBPsVyUny1n6mPVYhj7nj_ikaQofBA/view?usp=sharing", "_blank")}
                  
                 >
                   <Download className="w-4 h-4 mr-2" />
@@ -708,7 +776,7 @@ export default function Portfolio() {
                 })}
               </div>
               <p className="text-base sm:text-lg text-muted-foreground">
-                I enjoy building systems that are just as predictable as today’s weather.
+                I enjoy building systems that are as reliable and predictable as the weather.
               </p>
             </div>
           </Card>
@@ -741,75 +809,18 @@ export default function Portfolio() {
               <div className="prose prose-slate max-w-none dark:prose-invert">
                 <p className="text-lg leading-relaxed mb-4">
                   <span className="font-semibold text-primary">Background:</span>{" "}
-                  I bring ~5 years of industry experience in data engineering and backend systems, designing and operating scalable, cloud-native, and high-performance data platforms used in production by enterprise customers. I recently completed an MS in Computer Science at the University of Illinois Chicago, where I specialised in data engineering, cloud computing, distributed systems, and big data technologies, building directly on my industry background.
-                </p>
-                <p className="text-lg leading-relaxed mb-4">
-                  <span className="font-semibold text-primary">AWS Certification:</span>{" "}
-                  I am an AWS Certified Data Engineer – Associate with strong hands-on experience building secure, cost-efficient, and high-throughput data pipelines using services such as Amazon S3, Glue, EMR, Kinesis, Redshift, Athena, and DynamoDB. My expertise spans ETL/ELT pipelines, data lake and lakehouse architectures, data governance, and real-time analytics at scale.
+                  I bring ~5 years of experience building scalable backend systems, data pipelines, and AI infrastructure, from high-performance ETL connectors to production grade autonomous agent platforms. I recently completed my MS in Computer Science at the University of Illinois Chicago , specialising in Software Developmentdistributed systems, cloud computing, and AI.
                 </p>
                 <p className="text-lg leading-relaxed mb-4">
                   <span className="font-semibold text-primary">Professional Experience:</span>{" "}
-                  Previously, I worked as a Senior Software Engineer at Fivetran, collaborating in a startup environment across multiple teams within the data pipeline platform and contributing to both source connectors and destination writers. My work spanned API-based connectors as well as database connectors such as DynamoDB and MongoDB, focusing on scalability, correctness, and performance. I led the design of a high-performance DynamoDB incremental sync engine, achieving 15× faster syncs, and implemented MongoDB Change Streams–based CDC incremental syncing, delivering a 5× performance improvement. On the destination side, I worked on data warehouse writers, including BigQuery and Snowflake. Beyond individual connectors, I authored and designed a reliability framework adopted across 10+ engineering teams, won multiple internal hackathons, mentored and onboarded interns through a structured training program, and regularly participated in technical interviews for engineering roles.
+                  I've shipped production systems across Software Development and AI infrastructure at scale. At Hevo Data, I engineered high performance database connectors achieving 20× throughput gains, 15× faster DynamoDB syncs, and 5× MongoDB ingestion improvements and authored a Unified Connector Framework adopted across internal teams. At Stackgen, I built and scaled 30+ autonomous AI agents powering a multi-agent SRE/DevOps platform, architected provider agnostic LLM infrastructure across OpenAI, Anthropic, AWS Bedrock, and Vertex AI, and shipped Knowledge Hub , a production RAG pipeline with pgvector backed semantic search used as a live tool by agents at runtime.
                 </p>
                 <p className="text-lg leading-relaxed">
                   <span className="font-semibold text-primary">Open to Work:</span>{" "}
-                  I enjoy working on high-impact data infrastructure problems, building systems that are scalable, reliable, and cost-efficient from day one. I am currently open to full-time roles in data engineering, backend systems, and cloud infrastructure, particularly in fast-moving, product-focused teams.
+                  I enjoy working at the intersection of AI and data infrastructure, building autonomous agent systems, high performance pipelines, and cloud native backends that scale reliably in production. I am currently open to full-time roles in Software Developmet, backend systems,AI Infrastructure and cloud infrastructure, particularly in fast-moving, product-focused teams.
                 </p>
               </div>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications Section */}
-      <section
-        id="certifications"
-        className="py-20 px-4 sm:px-6"
-       >
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-primary/10 rounded-md">
-              <GraduationCap className="w-5 h-5 text-primary" />
-            </div>
-            <h2 className="text-3xl font-bold">Certifications</h2>
-          </div>
-
-          <div className="grid lg:grid-cols-1 gap-6">
-            {certifications.map((cert, index) => (
-              <Card key={index} className="p-6 sm:p-8">
-                <div className="flex flex-col lg:flex-row gap-6">
-                  {cert.image && (
-                    <div className="lg:w-48 lg:shrink-0">
-                      <img 
-                        src={cert.image} 
-                        alt={cert.name}
-                        className="w-full h-auto rounded-md object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="flex-1">
-                    <a 
-                      href={cert.link} 
-                      target="_blank" rel="noopener noreferrer"
-                      className="font-semibold text-xl sm:text-2xl text-primary hover:underline"
-                    >
-                      {cert.name}
-                    </a>
-                    <div className="flex items-center gap-3 mt-2 mb-4 text-muted-foreground">
-                      <Calendar className="w-4 h-4" />
-                      <span className="text-sm">{cert.date}</span>
-                    </div>
-                    <div className="text-muted-foreground whitespace-pre-line">
-                      {cert.description.split('\n').map((line, i) => (
-                        <p key={i} className={i > 0 ? "mt-4" : ""}>
-                          {line}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -1059,124 +1070,17 @@ export default function Portfolio() {
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-2">Onboarding Software Engineering Interns</h3>
-                  <p className="text-sm text-muted-foreground">Fivetran · Jan 2023 · 1 mo</p>
+                  <p className="text-sm text-muted-foreground">Hevo Data · Jan 2023 · 1 mo</p>
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Led the training and development of 12 interns from various colleges, designing and implementing a comprehensive month-long onboarding program. This program included detailed sessions on essential tools such as version control systems and IDEs, in-depth overviews of company processes and best practices, and hands-on workshops focused on understanding the architecture of complex systems. Additionally, I provided personalized guidance on navigating the company's codebase, ensuring that each intern was well-equipped to contribute effectively to ongoing projects. My efforts resulted in a smooth transition for the interns, enabling them to become productive members of the team more quickly.
               </p>
             </Card>
-
-            {/* Technical Interviewer */}
-            <Card className="p-6 sm:p-8">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2">Technical Interviewer</h3>
-                  <p className="text-sm text-muted-foreground">Fivetran · Sep 2021 - Aug 2024 · 3 yrs</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Conducted technical interviews for Software Interns, Software Engineers (SE1 and SE2), and Test Engineers, assessing candidates' expertise in coding, data engineering, and software development. Collaborated closely with the hiring team to identify top talent, ensuring alignment with both technical standards and company culture, while contributing to the continuous improvement of the interview process. Regularly participated in intern university drives, representing the engineering team, calibrating rubrics with campus panels, and mentoring shortlisted candidates through their onsite loops.
-              </p>
-            </Card>
           </div>
         </div>
       </section>
 
-      {/* Recommendations Section */}
-      <section id="recommendations" className="py-20 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="p-2 bg-primary/10 rounded-md">
-              <User className="w-5 h-5 text-primary" />
-            </div>
-            <h2 className="text-3xl font-bold">Recommendations</h2>
-          </div>
-
-          <div className="grid gap-8">
-            {/* Viswanath C */}
-            <Card className="p-6 sm:p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <Avatar className="w-12 h-12 shrink-0">
-                  <AvatarFallback className="bg-primary text-white font-bold">VC</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <h3 className="font-bold text-lg">Viswanath C</h3>
-                  <p className="text-sm text-muted-foreground">VP, Software Engineering</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                I've had the opportunity to work with Sunil, and I appreciate his proactive approach to software development. He often takes the initiative to identify potential issues early and suggests improvements that help enhance the product for our customers. Sunil pays close attention to user needs and works thoughtfully to make the product more user-friendly and efficient.
-              </p>
-            </Card>
-
-            {/* Ravi Sharda */}
-            <Card className="p-6 sm:p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <Avatar className="w-12 h-12 shrink-0">
-                  <AvatarFallback className="bg-primary text-white font-bold">RS</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <h3 className="font-bold text-lg">Ravi Sharda</h3>
-                  <p className="text-sm text-muted-foreground">Principal Software Engineer</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                I had the pleasure of working with Sunil at Fivetran, and I highly recommend him. He's incredibly innovative, always bringing fresh ideas and creative solutions to the team. Beyond that, he's a joy to work with—hardworking, meticulous, and a great collaborator. If you're looking for someone who combines creativity with reliability, Sunil is the person to have on your team!
-              </p>
-            </Card>
-
-            {/* Amit Aggarwal */}
-            <Card className="p-6 sm:p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <Avatar className="w-12 h-12 shrink-0">
-                  <AvatarFallback className="bg-primary text-white font-bold">AA</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <h3 className="font-bold text-lg">Amit Aggarwal</h3>
-                  <p className="text-sm text-muted-foreground">Director of Engineering</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Sunil's exceptional technical expertise and problem-solving abilities are remarkable. From his time as an intern to his current role, Sunil has consistently been my go-to person for product-related queries and urgent tasks. His ability to deliver high-quality solutions under tight deadlines, coupled with his deep understanding of our systems, has made him an invaluable asset to our team.
-              </p>
-            </Card>
-
-            {/* Ashwini Sharma */}
-            <Card className="p-6 sm:p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <Avatar className="w-12 h-12 shrink-0">
-                  <AvatarFallback className="bg-primary text-white font-bold">AS</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <h3 className="font-bold text-lg">Ashwini Sharma</h3>
-                  <p className="text-sm text-muted-foreground">Engineering Leader</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                I had the privilege of managing Sunil Kuruba at Fivetran, where he consistently demonstrated outstanding technical expertise and leadership. From day one, Sunil impressed with his deep product knowledge, quick coding ability, and willingness to mentor others. He rapidly became the go-to person for complex projects, playing a pivotal role in our team's success.
-              </p>
-            </Card>
-
-            <div className="flex justify-center">
-              <Button
-                variant="link"
-                className="text-primary"
-                onClick={() =>
-                  window.open(
-                    "https://www.linkedin.com/in/sunil-kuruba/details/recommendations/?detailScreenTabIndex=0",
-                    "_blank"
-                  )
-                }
-               
-              >
-                View all 11 recommendations on LinkedIn
-                <ExternalLink className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section
@@ -1209,14 +1113,14 @@ export default function Portfolio() {
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">Email</p>
-                        <p className="font-medium text-sm truncate">sunil.kuruba.sk@gmail.com</p>
+                        <p className="font-medium text-sm truncate">rohanks1810@gmail.com</p>
                       </div>
                     </div>
                     <Button
                       variant="ghost"
                       size="sm"
                       onClick={() => {
-                        navigator.clipboard.writeText("sunil.kuruba.sk@gmail.com");
+                        navigator.clipboard.writeText("rohanks1810@gmail.com");
                         alert("Email copied to clipboard!");
                       }}
                      
@@ -1233,7 +1137,7 @@ export default function Portfolio() {
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">Phone</p>
-                        <p className="font-medium text-sm truncate">+1 (312) 375-3597</p>
+                        <p className="font-medium text-sm truncate">+1 (312) 823-5767</p>
                       </div>
                     </div>
                     <Button
@@ -1260,7 +1164,7 @@ export default function Portfolio() {
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">LinkedIn</p>
-                        <p className="font-medium text-sm truncate">linkedin.com/in/sunil-kuruba</p>
+                        <p className="font-medium text-sm truncate">linkedin.com/in/rohankarlesudarshan</p>
                       </div>
                     </div>
                     <Button
@@ -1270,7 +1174,7 @@ export default function Portfolio() {
                       className="shrink-0 ml-2"
                     >
                       <a
-                        href="https://www.linkedin.com/in/sunil-kuruba"
+                        href="https://www.linkedin.com/in/rohankarlesudarshan/"
                         target="_blank"
                         rel="noopener noreferrer"
                        >
@@ -1286,7 +1190,7 @@ export default function Portfolio() {
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">GitHub</p>
-                        <p className="font-medium text-sm truncate">github.com/SunilKuruba</p>
+                        <p className="font-medium text-sm truncate">github.com/rohansudarshan1810</p>
                       </div>
                     </div>
                     <Button
@@ -1296,7 +1200,7 @@ export default function Portfolio() {
                       className="shrink-0 ml-2"
                     >
                       <a
-                        href="https://github.com/SunilKuruba"
+                        href="https://github.com/rohansudarshan1810"
                         target="_blank"
                         rel="noopener noreferrer"
                        >
@@ -1316,10 +1220,10 @@ export default function Portfolio() {
       <footer className="border-t bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-sm text-muted-foreground text-center sm:text-left w-full sm:w-auto leading-none">
-            Sunil Kuruba Portfolio
+            Rohan Karle Sudarshan Portfolio
           </p>
           <p className="text-sm text-muted-foreground text-center sm:text-right w-full sm:w-auto leading-none">
-            Built with passion for data
+            Built with passion for Software Development and AI
           </p>
         </div>
       </footer>
