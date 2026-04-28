@@ -26,8 +26,9 @@ import {
   Database,
   Sun,
   Moon,
+  Linkedin,
+  Github,
 } from "lucide-react";
-import { SiLinkedin, SiGithub } from "react-icons/si";
 
 // Navigation items
 const navItems = [
@@ -658,7 +659,7 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                    >
-                    <SiLinkedin className="w-4 h-4" />
+                    <Linkedin className="w-4 h-4" />
                   </a>
                 </Button>
                 <Button
@@ -672,7 +673,7 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                    >
-                    <SiGithub className="w-4 h-4" />
+                    <Github className="w-4 h-4" />
                   </a>
                 </Button>
               </div>
@@ -1160,7 +1161,7 @@ export default function Portfolio() {
                   <div className="flex items-center justify-between p-4 rounded-md bg-muted/50 hover:bg-muted transition-colors">
                     <div className="flex items-center gap-3 flex-1 min-w-0">
                       <div className="p-2 bg-primary/10 rounded-md shrink-0">
-                        <SiLinkedin className="w-5 h-5 text-primary" />
+                        <Linkedin className="w-5 h-5 text-primary" />
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">LinkedIn</p>
@@ -1186,7 +1187,7 @@ export default function Portfolio() {
                   <div className="flex items-center justify-between p-4 rounded-md bg-muted/50 hover:bg-muted transition-colors">
                     <div className="flex items-center gap-3 flex-1 min-w-0">
                       <div className="p-2 bg-primary/10 rounded-md shrink-0">
-                        <SiGithub className="w-5 h-5 text-primary" />
+                        <Github className="w-5 h-5 text-primary" />
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm text-muted-foreground">GitHub</p>
