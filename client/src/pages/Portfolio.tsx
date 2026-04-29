@@ -290,7 +290,7 @@ const education = [
     id: 2,
     degree: "Bachelor of Engineering in Computer Science",
     school: "Visvesvaraya Technological University",
-    period: "Aug 2019 - Aug 2023",
+    period: "Aug 2015 - Aug 2019",
     focus: "Computer Science and Engineering",
   },
 ];
